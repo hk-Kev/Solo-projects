@@ -5,14 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main-body">
-      <div class="display-area"></div>
+      <div class="display-area">
+        <label for="display" id="display-box">Calculator.</label>
+        <input type="number" id="input-box" />
+      </div>
       <div class="input-area">
         <div class="symbols">
           <button>AC</button>
           <button>+/-</button>
+          <button>%</button>
+          <button class="shadow" id="del-btn">÷</button>
+        </div>
+        <div>
+          <button class="number-btn">7</button>
+          <button class="number-btn">8</button>
+          <button class="number-btn">9</button>
+          <button class="shadow">x</button>
+        </div>
+        <div>
+          <button class="number-btn">4</button>
+          <button class="number-btn">5</button>
+          <button class="number-btn">6</button>
+          <button class="shadow">-</button>
+        </div>
+        <div>
+          <button class="number-btn">1</button>
+          <button class="number-btn">2</button>
+          <button class="number-btn">3</button>
+          <button class="shadow">+</button>
+        </div>
+        <div>
+          <button id="zero-btn">0</button>
+          <button>.</button>
+          <button class="shadow" id="eql-btn">=</button>
         </div>
       </div>
     </div>

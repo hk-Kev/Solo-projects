@@ -1,0 +1,84 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+button {
+  /* padding: 10px; */
+  width: 77px;
+  height: 62px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 2px solid #1e1e1e;
+  color: white;
+  background-color: #121212;
+  font-size: 2ch;
+  font-weight: bolder;
+}
+.display-area {
+  border-radius: 10px;
+  background-color: black;
+  width: 350px;
+  height: 150px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#display-box {
+  height: 50px;
+  color: rgba(128, 242, 13, 0.6);
+  text-align: center;
+  font-size: 3ch;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#input-box {
+  font-weight: bolder;
+  font-size: 2ch;
+  background-color: black;
+  border-style: none;
+  color: #80f20d;
+  height: 50px;
+  text-align: right;
+}
+body {
+  background-color: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  height: 100vh;
+}
+.main-body {
+  border: 2px solid #1e1e1e;
+  background-color: #101010;
+  padding: 30px;
+  border-radius: 10px;
+}
+.symbols button {
+  background-color: #1c1e1b;
+  color: #80f20d;
+}
+#eql-btn {
+  color: black;
+  background-color: #80f20d;
+}
+.shadow {
+  color: #80f20d;
+
+  box-shadow:
+    0 0 15px rgba(128, 242, 13, 0.6),
+    0 0 30px rgba(128, 242, 13, 0.2);
+  border: 1px solid rgba(128, 242, 13, 0.3);
+  background-color: rgba(128, 242, 13, 0.2);
+}
+#del-btn {
+  background-color: rgba(128, 242, 13, 0.2);
+}
+
+#zero-btn {
+  width: 170px;
+}
