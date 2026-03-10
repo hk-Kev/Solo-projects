@@ -1,0 +1,79 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  justify-content: center;
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+.user-info,
+p {
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 30px;
+}
+#main-picture {
+  width: 60px;
+  height: 60px;
+}
+.main-body {
+  width: 570px;
+  margin-top: 30px;
+  border: 2px solid whitesmoke;
+  background-color: #ffffff;
+}
+
+.profile-pictures {
+  border-radius: 50%;
+  width: 50px;
+}
+.main-logo {
+  height: 80px;
+}
+.posted-picture {
+  width: 570px;
+  padding: 20px 0;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.username {
+  font-weight: bolder;
+}
+.icon-pictures {
+  width: 30px;
+  margin: 0 10px;
+}
+span {
+  font-weight: bold;
+}
+footer,
+.user-info {
+  margin-left: 10px;
+}
+footer {
+  padding-top: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+#user-information {
+  display: flex;
+  flex-direction: column;
+  /* gap: 30px; */
+}
+#user-information > div {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 50px 0;
+}
