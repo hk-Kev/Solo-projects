@@ -18,55 +18,34 @@
         <img src="./image/nav_banner.png" alt="" />
       </nav>
       <main>
-        <section class="menu-details centering" id="menu-details">
-          <!-- <div class="menu-sect">
-            <div class="left-side">
-              <p class="emoji-icon">🍕</p>
-            </div>
-            <div class="right-side">
-              <div class="food-details">
-                <h1>Pizza</h1>
-                <p class="ingred">mushroom,mozarella</p>
-                <p>$14</p>
-              </div>
-              <i class="fa-solid fa-circle-plus"></i>
-            </div>
-          </div> -->
-        </section>
+        <section class="menu-details centering" id="menu-details"></section>
 
-        <section class="ordered-sec centering hidden">
-          <h1>Your order</h1>
-          <div class="ordered">
-            <h3>Pizza</h3>
-            <p>$14</p>
-          </div>
-          <div class="ordered total-ordered">
-            <h3>Total price:</h3>
-            <p>$26</p>
-          </div>
-
-          <button class="pay-btn">Complete order</button>
-        </section>
+        <section class="ordered-sec centering" id="ordering-section"></section>
 
         <section class="card-details">
           <form action="#">
             <p>Enter card details</p>
             <input
+              required
               type="text"
               placeholder="Enter your name"
               class="input-things"
             /><br />
             <input
-              type="text"
+              required
+              type="number"
               placeholder="Enter card number"
               class="input-things"
             /><br />
             <input
-              type="text"
+              required
+              type="number"
               placeholder="Enter CVV"
               class="input-things"
+              maxlength="3"
+              pattern="\d{3}"
             /><br />
-            <button class="pay-btn">Pay</button>
+            <button class="pay-btn" id="pay-btn">Pay</button>
           </form>
         </section>
       </main>
