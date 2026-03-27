@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.5em;
+}
+p,
+h1 {
+  margin: 0;
+}
+.journal {
+  display: flex;
+  align-items: center;
+}
+.journal p {
+  font-weight: 900;
+  margin-left: 0.225em;
+}
+.nav-section a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.5ch;
+}
+.nav-section {
+  display: flex;
+  align-items: center;
+}
+#about-me {
+  margin-left: 0.5em;
+}
+header {
+  background-image: url("/images/article-image-hero.png");
+  object-fit: cover;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+}
+.header-content {
+  position: absolute;
+  color: white;
+  bottom: 30px;
+  left: 25px;
+  width: 90%;
+}
+.header-content h1 {
+  font-size: 2.5em;
+}
+
+.blog {
+  padding: 1.5rem;
+}
+.blog-images {
+  width: 100%;
+  margin: 0.5em 0;
+}
+.view-more {
+  text-align: center;
+  margin: 3em;
+}
+.view-more a {
+  color: black;
+  font-weight: bolder;
+}
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 2.5em 0;
+}
+span {
+  color: rgb(169, 164, 164);
+}
+
+@media (min-width: 768px) {
+  .header-content {
+    width: 80%;
+    left: 50px;
+    bottom: 50px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .blog-images {
+    height: 30vh;
+  }
+  #subheading {
+    width: 75%;
+  }
+  #about-me {
+    margin-left: 3.5em;
+  }
+}
