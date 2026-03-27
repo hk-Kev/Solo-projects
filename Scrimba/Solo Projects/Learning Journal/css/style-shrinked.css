@@ -40,8 +40,9 @@ h1 {
 }
 #about-me {
   margin-left: 0.5em;
+  margin-right: 0.5em;
 }
-header {
+#home-header {
   background-image: url("/images/article-image-hero.png");
   object-fit: cover;
   height: 60vh;
@@ -86,7 +87,42 @@ span {
   color: rgb(169, 164, 164);
 }
 
+#about-me-header {
+  margin: 1.5em;
+}
+
+.about-me-subheading {
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+}
+.about-me-details {
+  margin: 0;
+  width: 100%;
+}
+.blog-section {
+  margin: 1.5em;
+}
+.blog-section img {
+  width: 100%;
+  padding-top: 1.5em;
+}
+.blog-section p {
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+}
+
+/* 
+///////////////////////////////////////////
+      MEDIA QUERIES
+/////////////////////////////////////////// */
+
 @media (min-width: 768px) {
+  main {
+    margin: 1.5em;
+  }
+  .journal {
+    margin: 0 1.5em;
+  }
   .header-content {
     width: 80%;
     left: 50px;
@@ -103,6 +139,41 @@ span {
     width: 75%;
   }
   #about-me {
-    margin-left: 3.5em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  #about-me-section {
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+  }
+  #about-me-section h1 {
+    font-size: 4.5ch;
+    width: 90%;
+  }
+  #about-me-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3em;
+  }
+  .about-me-subheading {
+    margin-bottom: 0;
+    width: 85%;
+  }
+  .about-me-details,
+  .blog-section p,
+  .blog-section h1 {
+    width: 85%;
+    margin: auto;
+  }
+  .blog-section {
+    width: 90%;
+    margin: auto;
+  }
+  .blog-section img {
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 2em;
   }
 }
