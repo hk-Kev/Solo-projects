@@ -1,0 +1,98 @@
+* {
+  /* box-sizing: border-box; */
+  font-family: "Inter", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-weight: 500;
+}
+nav {
+  width: 100%;
+  /* border: 2px solid red; */
+  margin-left: 0.5em;
+  display: flex;
+  align-items: center;
+}
+#color-picker {
+  border-width: 2px solid whitesmoke;
+  width: 10%;
+}
+#scheme-mode,
+#fetch-color-scheme,
+#color-picker {
+  height: 3em;
+  margin: 0 0.5em;
+  border-color: rgb(165, 160, 160);
+}
+#scheme-mode:active:focus,
+#fetch-color-scheme:active:focus,
+#color-picker:active:focus {
+  border-color: green;
+}
+
+#scheme-mode {
+  border-radius: 10px;
+  width: 60%;
+  padding-left: 10px;
+}
+#fetch-color-scheme {
+  border-radius: 10px;
+  font-weight: bolder;
+  width: 30%;
+  border: 1px solid rgb(165, 160, 160);
+}
+#fetch-color-scheme:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+  /* color: white; */
+}
+.main-thingy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 90vh; */
+  margin: auto;
+  width: 35em;
+  border: 2px solid green;
+  margin-top: 7em;
+  padding: 4.5em;
+  border-radius: 10px;
+  background-color: white;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  margin-top: 2em;
+}
+.background-colors {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.background-colors div {
+  width: 100%;
+  height: 30em;
+}
+
+#color-1 {
+  background-color: #264653;
+}
+#color-2 {
+  background-color: #2a9d8f;
+}
+#color-3 {
+  background-color: #e9c46a;
+}
+#color-4 {
+  background-color: #f4a261;
+}
+#color-5 {
+  background-color: #e76f51;
+}
+p:hover {
+  cursor: pointer;
+}
