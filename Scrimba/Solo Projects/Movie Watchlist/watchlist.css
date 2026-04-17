@@ -1,26 +1,21 @@
-* {
-  box-sizing: border-box;
-}
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  /* font-weight: bolder; */
   font-style: normal;
   font-variation-settings: "wdth" 100;
   background-color: #1c1c1c;
-  min-height: 100vh;
 }
 
 .main-thingy {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   background-color: #fff;
   justify-content: center;
   flex-direction: column;
-  margin: 2em auto;
-  /* border: 2px solid red; */
+  margin: auto;
   width: 35em;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -46,14 +41,23 @@ nav div {
 nav div button {
   border-style: none;
   background: none;
+
+  border: 2px solid white;
+  border-radius: 10px;
+  background: none;
   color: #fff;
   font-weight: bolder;
   font-size: 1.5ch;
   width: 30%;
 }
-nav div button a:hover {
-  color: lime;
+nav div button:hover {
+  border-color: red;
 }
+.movie-stats button:hover {
+  background-color: red;
+  border-radius: 10px;
+}
+
 nav div h1 {
   width: 65%;
   font-size: 4ch;
@@ -64,7 +68,7 @@ div button a {
 }
 
 main {
-  min-height: 30em;
+  /* height: 80vh; */
   width: 85%;
 }
 #original-stuff {
@@ -103,7 +107,18 @@ main {
   padding-left: 1.5em;
   width: 80%;
 }
-.details-side h3 i {
+.title-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-section h3 {
+  width: 80%;
+}
+.title-section div {
+  width: 20%;
+}
+#star {
   color: #fec654;
   font-size: 1.5ch;
 }

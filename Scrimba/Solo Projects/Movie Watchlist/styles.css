@@ -1,25 +1,21 @@
-* {
-  box-sizing: border-box;
-}
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  /* font-weight: bolder; */
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  background-color: #1c1c1c;
-  min-height: 100vh;
+  /* background-color: #1c1c1c; */
 }
 
 .main-thingy {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   background-color: #fff;
   justify-content: center;
   flex-direction: column;
-  margin: 2em auto;
+  margin: auto;
   /* border: 2px solid red; */
   width: 35em;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -49,6 +45,15 @@ nav div button {
   font-weight: bolder;
   font-size: 1.5ch;
   width: 25%;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.movie-stats button:hover {
+  background-color: #fec654;
+  border-radius: 10px;
+}
+nav div button:hover {
+  border-color: red;
 }
 nav div h1 {
   width: 75%;
@@ -60,23 +65,34 @@ div button a {
 }
 .search-area {
   background-color: #fff;
-  width: 65%;
+  width: 30%;
   border: 2px solid #999;
   border-radius: 7px;
   display: flex;
   align-items: center;
   height: 40px;
   position: absolute;
-  top: 167px;
+  top: 135px;
 }
 #movie-search-area {
-  margin-left: 0.5em;
+  /* margin-left: 0.5em; */
   height: 100%;
   width: 70%;
+  padding-left: 0.5em;
   border-style: none;
+  text-align: center;
+  font-weight: 400;
 }
 #movie-search-area::placeholder {
   font-weight: bold;
+  padding-left: 0.5em;
+  text-align: center;
+}
+#movie-search-area:focus,
+#movie-search-area:active {
+  outline: none;
+  border: none;
+  padding-left: 0.5em;
 }
 #search-btn {
   width: 25%;
@@ -85,17 +101,23 @@ div button a {
   background-color: hwb(0 95% 3%);
   border-left: 1px solid #999;
   font-family: "Roboto", sans-serif;
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 7px;
-  font-weight: 400;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
 }
+#search-btn:hover {
+  background-color: limegreen;
+}
+
 #search-icon {
   margin-left: 0.5em;
   background-color: #fff;
 }
 main {
-  min-height: 30em;
-  width: 850%;
+  height: 80vh;
+  width: 85%;
+  height: inherit;
 }
 #original-stuff {
   display: flex;
@@ -129,7 +151,18 @@ main {
   padding-left: 1.5em;
   width: 80%;
 }
-.details-side h3 i {
+.title-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-section h3 {
+  width: 80%;
+}
+.title-section div {
+  width: 20%;
+}
+#star {
   color: #fec654;
   font-size: 1.5ch;
 }
@@ -148,4 +181,15 @@ main {
 }
 .plot-details {
   color: #6b7280;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .search-area {
+    width: 65%;
+  }
+}
+@media (max-width: 390px) {
+  .search-area {
+    width: 65%;
+  }
 }
