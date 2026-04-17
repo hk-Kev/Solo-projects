@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Watchlist</title>
+    <link rel="stylesheet" href="watchlist.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-thingy">
+      <nav>
+        <div>
+          <h1>My Watchlist</h1>
+          <button>
+            <a href="index.html">Search for movies</a>
+          </button>
+        </div>
+      </nav>
+
+      <main>
+        <!-- <section id="original-stuff">
+          <p>Your watchlist is looking a little empty....</p>
+
+          <p>
+            <i class="fa-solid fa-circle-plus"></i
+            ><a href="index.html"> Let's add some movies</a>
+          </p>
+        </section> -->
+        <section class="movie">
+          <div class="poster-side"></div>
+          <div class="details-side">
+            <h3>
+              Movie title <i class="fa-solid fa-star"></i> <span>8.0</span>
+            </h3>
+            <div class="movie-stats">
+              <span class="runtime">164 min</span>
+              <span class="genre">Action, Drama, Mystery</span>
+              <button><i class="fa-solid fa-circle-minus"></i> Remove</button>
+            </div>
+            <p class="plot-details">
+              After being held captive in an Afghan cave, billionaire engineer
+              Tony Stark creates a unique weaponized suit of armor to fight
+              evil.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

@@ -35,6 +35,7 @@ nav {
   justify-content: space-between;
   color: #fff;
 }
+
 nav div {
   margin: 0 2em;
   width: 100%;
@@ -48,54 +49,23 @@ nav div button {
   color: #fff;
   font-weight: bolder;
   font-size: 1.5ch;
-  width: 25%;
+  width: 30%;
+}
+nav div button a:hover {
+  color: lime;
 }
 nav div h1 {
-  width: 75%;
+  width: 65%;
   font-size: 4ch;
 }
 div button a {
   text-decoration: none;
   color: #fff;
 }
-.search-area {
-  background-color: #fff;
-  width: 65%;
-  border: 2px solid #999;
-  border-radius: 7px;
-  display: flex;
-  align-items: center;
-  height: 40px;
-  position: absolute;
-  top: 167px;
-}
-#movie-search-area {
-  margin-left: 0.5em;
-  height: 100%;
-  width: 70%;
-  border-style: none;
-}
-#movie-search-area::placeholder {
-  font-weight: bold;
-}
-#search-btn {
-  width: 25%;
-  height: 100%;
-  border-style: none;
-  background-color: hwb(0 95% 3%);
-  border-left: 1px solid #999;
-  font-family: "Roboto", sans-serif;
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 7px;
-  font-weight: 400;
-}
-#search-icon {
-  margin-left: 0.5em;
-  background-color: #fff;
-}
+
 main {
   min-height: 30em;
-  width: 850%;
+  width: 85%;
 }
 #original-stuff {
   display: flex;
@@ -105,8 +75,12 @@ main {
   flex-direction: column;
   color: #d6d6d6;
 }
-#original-stuff i {
-  font-size: 8ch;
+#original-stuff p a {
+  color: black;
+  text-decoration: none;
+}
+#original-stuff p i {
+  color: black;
 }
 
 .movie {
