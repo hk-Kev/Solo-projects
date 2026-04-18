@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  /* height: 100vh; */
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -9,7 +10,7 @@ body {
 }
 
 .main-thingy {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -106,7 +107,9 @@ div button a {
   font-weight: 500;
   cursor: pointer;
 }
-#search-btn:hover {
+#search-btn:hover,
+#search-btn:active,
+#search-btn:focus {
   background-color: limegreen;
 }
 
@@ -114,10 +117,10 @@ div button a {
   margin-left: 0.5em;
   background-color: #fff;
 }
-main {
-  height: 80vh;
+#main-section {
+  height: 100vh;
   width: 85%;
-  height: inherit;
+  /* height: inherit; */
 }
 #original-stuff {
   display: flex;
@@ -192,4 +195,8 @@ main {
   .search-area {
     width: 65%;
   }
+}
+
+.btn-active-flash {
+  background-color: lime !important;
 }
