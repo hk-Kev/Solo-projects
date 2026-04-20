@@ -6,6 +6,7 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   /* background-color: #1c1c1c; */
+  /* height: 100vh; */
 }
 
 .main-thingy {
@@ -68,7 +69,8 @@ div button a {
 }
 
 main {
-  height: 80vh;
+  /* height: 80vh; */
+  min-height: 37.5rem;
   width: 85%;
   /* height: inherit; */
 }
