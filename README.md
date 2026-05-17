@@ -1,2 +1,2 @@
 # Personal-projects
-Trying to master HTML, CSS and JavaScript
+Trying to master HTML, CSS, JavaScript and React.
